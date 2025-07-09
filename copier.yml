@@ -1,0 +1,15 @@
+_subdirectory: "template"
+_jinja_extensions:
+  - jinja2_time.TimeExtension
+_skip_if_exists:
+  - .secrets.baseline
+  - test/test_template.py
+  - README.md
+  - copier.yml
+  - "common/*"
+
+template_name:
+  type: str
+  help: "Name of the template, to be used when naming the repository and configuring default files. e.g. 'terraform', 'java', 'python'"
+  validator: |
+    {% if template_name | trim | length == 0 %}template_name cannot be empty!{% endif %}

@@ -1,0 +1,17 @@
+name: Run Tests
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  check:
+    name: "Run Tests"
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+    uses: launchbynttdata/launch-workflows/.github/workflows/reusable-python-uv-pytest.yml@feature/python-uv-pytest-workflow
+    with:
+      report-coverage: false
+    secrets: inherit # pragma: allowlist secret

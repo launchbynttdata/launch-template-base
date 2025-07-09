@@ -1,0 +1,10 @@
+{{ "{%" }} extends "template/.gitignore.jinja" {{ "%}" }}
+
+{{ "{%" }} block template_gitignore {{ "%}" }}
+{{ "{#" }}Template-specific .gitignore rules go here, e.g. {{ "#}" }}
+{{ "{#" }}
+.vscode/
+.idea/
+*.swp
+{{ "#}" }}
+{{ "{%-" }} endblock template_gitignore {{ "-%}" }}

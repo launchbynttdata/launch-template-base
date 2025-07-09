@@ -1,0 +1,27 @@
+repos:
+  - repo: local
+    hooks:
+      - id: forbidden-files
+        name: forbidden files
+        entry:
+          found Copier update rejection files; review and remove them before
+          merging.
+        language: fail
+        files: "\\.rej$"
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: cef0300fd0fc4d2a87a85fa2093c6b283ea36f4b # pragma: allowlist secret
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-merge-conflict
+        args: [--assume-in-merge]
+      - id: check-symlinks
+      - id: check-shebang-scripts-are-executable
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: 01886c8a910c64595c47f186ca1ffc0b77fa5458 # pragma: allowlist secret
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: package.lock.json

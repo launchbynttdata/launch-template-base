@@ -1,0 +1,15 @@
+{{ "{%" }} extends "template/.pre-commit-config.yaml.jinja" {{ "%}" }}
+
+{{ "{%" }} block template_precommitconfig {{ "%}" }}
+{{ "{#" }}Pre-commit repo list items go here, e.g. {{ "#}" }}
+{{ "{#" }}
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: 2f8bda194a420ad77a050a9de627d77a74841fdc # pragma: allowlist secret (v1.99.4)
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_docs
+        args:
+          - --args=--config=.terraform-docs.yml
+{{ "#}" }}
+{{ "{%-" }} endblock template_precommitconfig {{ "-%}" }}

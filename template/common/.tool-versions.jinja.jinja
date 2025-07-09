@@ -1,0 +1,8 @@
+{{ "{%" }} extends "template/.tool-versions.jinja" {{ "%}" }}
+
+{{ "{%-" }} block template_toolversions {{ "-%}" }}
+{{ "{#" }} Additional .tool-versions items go here, e.g. {{ "#}" }}
+{{ "{#" }}
+terraform 1.2.3
+{{ "#}" }}
+{{ "{%-" }} endblock template_toolversions {{ "-%}" }}
