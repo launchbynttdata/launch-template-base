@@ -13,3 +13,7 @@ render-defaults:
 .PHONY: clean
 clean:
 	@find temp/ -mindepth 1 -maxdepth 1 -exec rm -rf {} \;
+
+.PHONY: update
+update:
+	@uv run copier update --trust --defaults
