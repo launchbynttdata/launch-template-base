@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "Apache 2.0"}
 dependencies = [
-    "copier>=9.7.1",
+    "copier>=9.14.3",
     "jinja2-time>=0.2.0",
     "pytest>=8.4.1",
     "ruamel-yaml>=0.18.14",
