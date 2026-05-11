@@ -15,7 +15,7 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: release-drafter/release-drafter@139054aeaa9adc52ab36ddf67437541f039b88e2
+      - uses: release-drafter/release-drafter@c2e2804cc59f45f57076a99af580d0fedb697927
         with:
           commitish: main
           latest: true
