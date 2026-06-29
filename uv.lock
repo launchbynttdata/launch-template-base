@@ -35,7 +35,7 @@ wheels = [
 
 [[package]]
 name = "copier"
-version = "9.14.1"
+version = "9.16.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama" },
@@ -52,9 +52,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "questionary" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c9/bf/f217410ea074263f6346023fa2fe5aefbf2b1fdc583377dc84a74a8eac61/copier-9.14.1.tar.gz", hash = "sha256:98178638db62807a2d22aac851ab9c09ceaee3054884a693ca9d214c6739efe7", size = 624152, upload-time = "2026-03-31T12:03:54.816Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9c/c7/3cd18cd539ff41e8e7a95b0146dbace0ba332a4c97f468066b2c2daca2ed/copier-9.16.0.tar.gz", hash = "sha256:4db1a9861d0760f745cc6241f99be37b476f849b8ad700133e2f620b7df92eb2", size = 643997, upload-time = "2026-06-23T17:09:04.995Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ca/cc/b1ce2de93f097468d394a71821671f34de34d16d841476c11496edd226b1/copier-9.14.1-py3-none-any.whl", hash = "sha256:cec88ca48b653fc251660e7787bca893ede719d265f3e50281f4d54badb404b5", size = 59529, upload-time = "2026-03-31T12:03:53.576Z" },
+    { url = "https://files.pythonhosted.org/packages/0c/a4/cf8df35b6488c04cae9aa7338c7b531a87aae2515da3993d2906d49b1dc1/copier-9.16.0-py3-none-any.whl", hash = "sha256:fadc55a22db6fb0f99d52878d3df4df3fa9c314dd96b0d81fef785a5e803114b", size = 65483, upload-time = "2026-06-23T17:09:03.617Z" },
 ]
 
 [[package]]
@@ -138,7 +138,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "copier", specifier = ">=9.7.1" },
+    { name = "copier", specifier = ">=9.16.0" },
     { name = "jinja2-time", specifier = ">=0.2.0" },
     { name = "pytest", specifier = ">=8.4.1" },
     { name = "ruamel-yaml", specifier = ">=0.18.14" },
